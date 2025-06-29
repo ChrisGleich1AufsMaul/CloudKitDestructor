@@ -28,14 +28,15 @@ This tweak allows you to prevent this from happening — useful for:
 
    ```bash
    make clean package
-Transfer and install the .deb package on your jailbroken device:
+  Transfer and install the .deb package on your jailbroken device:
 
 2. bash
 - scp ./packages/*.deb root@<device-ip>:/var/mobile/
 - ssh root@<device-ip>
 - dpkg -i /var/mobile/*.deb
 - killall -9 SpringBoard
-- 
+
+
 🧩 Sample Code
 %hook ADCCloudKitManager
 
